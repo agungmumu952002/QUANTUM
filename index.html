@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071225">
+<title>Quantum Assessment 2026</title>
+<style>
+:root{--bg:#071225;--panel:#0e1d35;--panel2:#132744;--cyan:#52e5ff;--violet:#a78bfa;--text:#edf6ff;--muted:#9bb0ca;--line:#254363;--good:#36d399;--bad:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 10%,#15365a 0,transparent 32%),radial-gradient(circle at 90% 20%,#30205a 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#52e5ff14 1px,transparent 1px),linear-gradient(90deg,#52e5ff14 1px,transparent 1px);background-size:42px 42px}
+header{position:sticky;top:0;z-index:10;background:#071225eF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px);padding:14px clamp(16px,4vw,48px);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-weight:900;letter-spacing:1.5px}.brand span{color:var(--cyan)}.topmeta{color:var(--muted);font-size:12px}
+main{max-width:1180px;margin:auto;padding:28px 18px 70px}.hero{padding:34px 0 24px}.eyebrow{color:var(--cyan);letter-spacing:3px;font-size:11px;font-weight:800}.hero h1{font-size:clamp(34px,6vw,68px);line-height:1;margin:12px 0;background:linear-gradient(90deg,#fff,#72eaff,#b9a5ff);background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:700px;line-height:1.7}
+.card{background:linear-gradient(145deg,#10233deF,#0b192deF);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 45px #0003}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+h2{font-size:22px;margin:0 0 16px}h3{margin:0 0 8px}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}
+button,.btn{border:1px solid #2d5878;border-radius:12px;padding:12px 16px;background:linear-gradient(120deg,#123c58,#26305a);color:white;font-weight:750;cursor:pointer;transition:.2s}button:hover,.btn:hover{transform:translateY(-2px);border-color:var(--cyan);box-shadow:0 8px 24px #52e5ff22}button:disabled{opacity:.4;cursor:not-allowed;transform:none}.primary{background:linear-gradient(100deg,#087e9c,#6546b9);border:0}.danger{background:#5a2035;border-color:#a83b5c}.tile{text-align:left;min-height:130px;display:flex;flex-direction:column;justify-content:space-between}.tile b{font-size:18px}.tile span{color:var(--muted);font-size:12px}.tile .glyph{font-size:27px;color:var(--cyan)}
+label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}input,select,textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:10px;background:#08172a;color:white;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--cyan)}
+.warning{border-left:3px solid #fbbf24;padding:10px 14px;background:#fbbf2410;border-radius:8px;margin:8px 0;color:#fce7a1;font-size:13px}
+.hidden{display:none!important}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.between{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.pill{padding:6px 10px;border-radius:99px;background:#163451;color:#9ceeff;font-size:11px;font-weight:800}
+.subject-card{padding:16px;border:1px solid var(--line);border-radius:14px;background:#0b1a30}.subject-card h3{font-size:16px}.subject-card p{font-size:12px;color:var(--muted)}
+.progress{height:7px;background:#20344e;border-radius:9px;overflow:hidden;margin:12px 0}.progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--violet));width:0}
+.option{display:block;width:100%;text-align:left;margin:9px 0;background:#10233b;border-color:#28445f;font-weight:500}.option.selected{border-color:var(--cyan);background:#123b52}.qbox{font-size:19px;line-height:1.6;margin:22px 0}.timer{font-size:25px;font-weight:900;color:var(--cyan);font-variant-numeric:tabular-nums}
+.blackout{position:fixed;inset:0;background:#000;z-index:99;display:none;align-items:center;justify-content:center;text-align:center;padding:25px}.blackout.show{display:flex}.blackout h2{font-size:28px}.blackout p{color:#aaa}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:11px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--cyan)}
+footer{text-align:center;color:#68809b;font-size:11px;padding:25px}
+@media(max-width:600px){header{padding:12px}.card{padding:16px}.hero{padding-top:20px}}
+@media print{body{background:white;color:black}header,.no-print,button{display:none!important}.card{background:white;color:black;border:1px solid #ccc;box-shadow:none}th,td{color:black;border-color:#ccc}}
+</style></head>
+<body>
+<header><div class="brand">◈ QUANTUM <span>ASSESSMENT</span></div><div class="topmeta">MADRASAH EXAMINATION SYSTEM · 2026/2027</div></header>
+<main>
+<section id="home">
+ <div class="hero"><div class="eyebrow">QUANTUM LEARNING INTERFACE / SEMESTER GANJIL</div><h1>ASSESSMENT<br>BEYOND TIME.</h1><p>Portal asesmen digital untuk kelas X, XI, dan XII. Pilih rumpun mata pelajaran, kerjakan ujian dengan tertib, dan jelajahi mode petualangan pembelajaran.</p></div>
+ <div class="card"><h2>⚠ Lima Peringatan Peserta</h2>
+ <div class="warning">1. Pastikan identitas dan kelas telah dipilih dengan benar sebelum memulai.</div><div class="warning">2. Waktu ujian reguler adalah 90 menit dan terus berjalan setelah dimulai.</div><div class="warning">3. Setiap soal hanya dapat dijawab satu kali; jawaban yang tersimpan tidak dapat diubah.</div><div class="warning">4. Dilarang menyalin soal, membuka tab/aplikasi lain, mengambil tangkapan layar, atau menggunakan split-screen. Sistem akan menampilkan layar peringatan jika mendeteksi pelanggaran yang didukung browser.</div><div class="warning">5. Pastikan koneksi dan perangkat stabil. Kirim jawaban sebelum waktu habis.</div>
+ <div class="grid2" style="margin-top:18px"><div><label>Nama lengkap</label><input id="studentName" placeholder="Masukkan nama peserta"></div><div><label>Nomor ujian</label><input id="examNo" placeholder="Nomor ujian"></div><div><label>Kelas</label><select id="classSelect"><option value="">Pilih kelas</option><option value="X">X</option><option value="XI">XI</option><option value="XII">XII</option></select></div></div>
+ <div style="margin-top:18px"><button class="primary" onclick="enterPortal()">MASUK KE PORTAL →</button></div></div>
+</section>
+<section id="portal" class="hidden">
+ <div class="hero"><div class="eyebrow">STUDENT PORTAL</div><h1 id="welcome">SELAMAT DATANG</h1><p id="studentMeta"></p></div>
+ <h2>Pilih Rumpun Asesmen</h2><div class="grid" id="categories"></div>
+ <div class="card" style="margin-top:20px"><div class="between"><div><h2>Mode Pengerjaan</h2><p class="muted">Pilih pengalaman asesmen yang ingin dijalankan.</p></div><span class="pill">90 MENIT · MODE REGULER</span></div><div class="grid2"><button class="tile" onclick="showSubjects('regular')"><span class="glyph">▤</span><b>Mode Reguler</b><span>Ujian statis, fokus, satu arah.</span></button><button class="tile" onclick="showAdventure()"><span class="glyph">✧</span><b>Mode Petualangan</b><span>Survival · Arcade · Teka-Teki · Duel.</span></button></div></div>
+</section>
+<section id="subjects" class="hidden"><div class="between"><div><div class="eyebrow">SUBJECT SELECTION</div><h2 id="subjectTitle">Pilih Mata Pelajaran</h2><p class="muted" id="subjectDesc"></p></div><button onclick="backPortal()">← Kembali</button></div><div class="grid" id="subjectGrid"></div></section>
+<section id="adventure" class="hidden"><div class="between"><div><div class="eyebrow">QUEST DIMENSION</div><h2>Mode Petualangan</h2><p class="muted">Pilih arena untuk menguji pemahaman materi.</p></div><button onclick="backPortal()">← Kembali</button></div><div class="grid2">
+ <button class="tile" onclick="startAdventure('SURVIVAL')"><span class="glyph">⚔</span><b>Survival Expedition</b><span>Karakter bergerak melewati 10 gerbang pertanyaan.</span></button>
+ <button class="tile" onclick="startAdventure('ARCADE')"><span class="glyph">▣</span><b>Quantum Arcade</b><span>Raih skor melalui tantangan cepat.</span></button>
+ <button class="tile" onclick="startAdventure('PUZZLE')"><span class="glyph">⌘</span><b>Historical Puzzle</b><span>Susun konsep dan pecahkan teka-teki.</span></button>
+ <button class="tile" onclick="startAdventure('DUEL')"><span class="glyph">⚡</span><b>Knowledge Duel</b><span>Duel skor melawan rival virtual.</span></button>
+ </div><div class="card" style="margin-top:16px"><p class="small">Mode petualangan merupakan latihan gamifikasi dan tidak menggantikan hasil ujian reguler.</p><div id="questArea"></div></div></section>
+<section id="exam" class="hidden"><div class="card"><div class="between"><div><span class="pill" id="examMode">MODE REGULER</span><h2 id="examSubject">Mata Pelajaran</h2><p class="small" id="examStudent"></p></div><div class="timer" id="timer">90:00</div></div><div class="progress"><i id="progressBar"></i></div><div class="between"><span class="small" id="questionCount">Soal 1 dari 50</span><span class="small" id="answeredCount">Terjawab 0</span></div><div class="qbox" id="questionText"></div><div id="options"></div><div class="between" style="margin-top:20px"><button id="nextBtn" class="primary" onclick="nextQuestion()">SOAL BERIKUTNYA →</button><button class="danger" onclick="finishExam()">AKHIRI ASESMEN</button></div></div></section>
+<section id="result" class="hidden"><div class="card"><div class="eyebrow">ASSESSMENT COMPLETED</div><h1 style="font-size:42px">HASIL ASESMEN</h1><div id="resultContent"></div><button class="primary no-print" onclick="backPortal()">KEMBALI KE PORTAL</button></div></section>
+<section id="teacher" class="hidden"><div class="between"><div><div class="eyebrow">FACULTY CONTROL CENTER</div><h2>Dasbor Guru</h2><p class="muted">Kelola bank soal dan pantau hasil peserta.</p></div><button onclick="backPortal()">Portal siswa</button></div>
+ <div class="card"><div class="between"><h2>Impor / Ganti Bank Soal</h2><span class="pill">JSON</span></div><p class="small">Unggah berkas JSON dengan struktur: {"subject":"Akidah","class":"X","questions":[{"q":"Pertanyaan","options":["A","B","C","D","E"],"answer":0,"explanation":"Pembahasan"}]}</p><input type="file" id="questionFile" accept=".json"><button style="margin-top:10px" onclick="importQuestions()">IMPOR BANK SOAL</button><p id="importStatus" class="small"></p></div>
+ <div class="card" style="margin-top:16px"><div class="between"><h2>Hasil Peserta Didik</h2><button onclick="window.print()">CETAK / SIMPAN PDF</button></div><div class="row"><select id="filterClass" onchange="renderResults()"><option value="">Semua kelas</option><option>X</option><option>XI</option><option>XII</option></select><button onclick="exportCSV()">Unduh CSV</button></div><div style="overflow:auto;margin-top:14px"><table><thead><tr><th>Nama</th><th>No. Ujian</th><th>Kelas</th><th>Mapel</th><th>Skor</th><th>Waktu</th></tr></thead><tbody id="resultRows"></tbody></table></div></div>
+</section>
+<div class="small no-print" style="text-align:center;margin-top:24px"><button onclick="teacherLogin()">AKSES DASBOR GURU</button></div>
+</main><footer>QUANTUM ASSESSMENT 2026 · Designed for GitHub Pages · Learning with integrity</footer>
+<div id="blackout" class="blackout"><div><h2>⚠ FOKUS UJIAN TERGANGGU</h2><p id="blackMessage">Aktivitas di luar halaman terdeteksi.</p><p>Soal akan dimuat ulang. Waktu ujian tetap berjalan.</p><button onclick="resumeAfterViolation()">LANJUTKAN</button></div></div>
+<script>
+const GROUPS={
+ "AGAMA":["Akidah","Fiqih","Al-Qur'an Hadis","Sejarah Kebudayaan Islam"],
+ "UMUM":["Bahasa Indonesia","PPKn","Penjaskes","Sejarah","Sejarah Indonesia","Bahasa Inggris","Seni Budaya","Prakarya"],
+ "IPA":["Geografi","Kimia","Fisika"],
+ "IPS":["Ekonomi","Sosiologi","Antropologi"]
+};
+const TOPICS={
+ "Akidah":["iman kepada Allah","asmaul husna","iman kepada malaikat","iman kepada kitab","iman kepada rasul","iman kepada hari akhir","qada dan qadar","tauhid rububiyah","tauhid uluhiyah","akhlak terpuji"],
+ "Fiqih":["thaharah","wudu","tayamum","salat fardu","salat berjamaah","puasa","zakat","haji dan umrah","muamalah","prinsip halal dan haram"],
+ "Al-Qur'an Hadis":["pengertian Al-Qur'an","fungsi hadis","tajwid nun sukun","mad","asbabun nuzul","makna ayat tentang ilmu","kejujuran dalam hadis","ukhuwah","amanah","tabayyun"],
+ "Sejarah Kebudayaan Islam":["dakwah Nabi periode Makkah","dakwah Nabi periode Madinah","Piagam Madinah","Khulafaur Rasyidin","Dinasti Umayyah","Dinasti Abbasiyah","perkembangan ilmu pengetahuan Islam","Islam di Nusantara","Wali Songo","peradaban Islam"],
+ "Bahasa Indonesia":["teks laporan hasil observasi","teks eksposisi","teks anekdot","teks negosiasi","teks debat","teks biografi","teks editorial","teks prosedur","teks cerpen","kaidah kebahasaan"],
+ "PPKn":["Pancasila","UUD 1945","norma dan konstitusi","hak dan kewajiban warga negara","demokrasi","Bhinneka Tunggal Ika","NKRI","HAM","lembaga negara","wawasan nusantara"],
+ "Penjaskes":["kebugaran jasmani","permainan bola besar","permainan bola kecil","atletik","pencak silat","senam lantai","renang","pola hidup sehat","gizi seimbang","pertolongan pertama"],
+ "Sejarah":["konsep kronologi","periodisasi","sumber sejarah","historiografi","peradaban awal","revolusi industri","kolonialisme","pergerakan nasional","perang dunia","perubahan sosial"],
+ "Sejarah Indonesia":["kerajaan Hindu-Buddha","kerajaan Islam","VOC","tanam paksa","pergerakan nasional","Sumpah Pemuda","pendudukan Jepang","proklamasi","demokrasi Indonesia","reformasi"],
+ "Bahasa Inggris":["descriptive text","recount text","narrative text","procedure text","analytical exposition","passive voice","simple past tense","expressing opinion","announcement","reading comprehension"],
+ "Seni Budaya":["unsur seni rupa","prinsip desain","seni musik","tempo dan dinamika","tari tradisional","teater","apresiasi seni","pameran","kritik seni","seni rupa daerah"],
+ "Prakarya":["kerajinan bahan lunak","kerajinan bahan keras","budidaya tanaman","pengolahan pangan","rekayasa sederhana","kemasan produk","analisis peluang usaha","perencanaan produksi","pemasaran","keselamatan kerja"],
+ "Geografi":["konsep geografi","peta dan skala","litosfer","atmosfer","hidrosfer","biosfer","dinamika penduduk","mitigasi bencana","penginderaan jauh","SIG"],
+ "Kimia":["struktur atom","sistem periodik","ikatan kimia","stoikiometri","larutan","asam basa","reaksi redoks","hidrokarbon","termokimia","laju reaksi"],
+ "Fisika":["besaran dan satuan","vektor","gerak lurus","hukum Newton","usaha dan energi","momentum","suhu dan kalor","gelombang","listrik dinamis","optika"],
+ "Ekonomi":["kelangkaan","biaya peluang","permintaan","penawaran","pasar","elastisitas","pendapatan nasional","inflasi","kebijakan fiskal","akuntansi dasar"],
+ "Sosiologi":["interaksi sosial","nilai dan norma","sosialisasi","kelompok sosial","lembaga sosial","stratifikasi","mobilitas sosial","konflik sosial","integrasi sosial","perubahan sosial"],
+ "Antropologi":["kebudayaan","unsur kebudayaan","bahasa","sistem kekerabatan","tradisi lisan","etnografi","relativisme budaya","difusi budaya","akulturasi","identitas budaya"]
+};
+const GENERIC=[
+ t=>`Dalam mempelajari ${t}, pemahaman konsep yang tepat ditunjukkan oleh ...`,
+ t=>`Contoh penerapan ${t} dalam kehidupan sehari-hari adalah ...`,
+ t=>`Tujuan utama mempelajari ${t} ialah ...`,
+ t=>`Pernyataan yang paling sesuai dengan prinsip ${t} adalah ...`,
+ t=>`Apabila terjadi permasalahan terkait ${t}, langkah yang paling tepat ialah ...`,
+ t=>`Hubungan ${t} dengan materi lain dapat dipahami melalui ...`,
+ t=>`Ciri penting yang membedakan ${t} dari konsep lain adalah ...`,
+ t=>`Kesimpulan yang tepat berdasarkan konsep ${t} yaitu ...`,
+ t=>`Sikap kritis ketika mengkaji ${t} ditunjukkan dengan ...`,
+ t=>`Indikator keberhasilan memahami ${t} adalah ...`
+];
+const DIST=["mengabaikan fakta dan konteks","mengandalkan dugaan tanpa bukti","mencampuradukkan konsep yang berbeda","menolak seluruh informasi baru","mengutamakan hafalan tanpa pemahaman"];
+const BANK={};
+function hash(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return Math.abs(h)}
+function buildBank(subject,cls){
+ let key=subject+"|"+cls;if(BANK[key])return BANK[key];let saved=localStorage.getItem("qa_bank_"+subject+"_"+cls);if(saved){BANK[key]=JSON.parse(saved);return BANK[key];}
+ let topics=TOPICS[subject]||["konsep dasar","penerapan konsep","analisis kasus"];
+ let qs=[];
+ for(let i=0;i<50;i++){
+  let t=topics[i%topics.length], n=Math.floor(i/10), tmpl=GENERIC[i%GENERIC.length];
+  let correct=[
+   `memahami konsep ${t} berdasarkan definisi, bukti, dan konteks yang relevan`,
+   `menganalisis ${t} secara runtut serta menerapkannya secara bertanggung jawab`,
+   `menghubungkan prinsip ${t} dengan contoh nyata secara logis`,
+   `memeriksa sumber dan alasan sebelum menyimpulkan tentang ${t}`,
+   `menjelaskan ${t} dengan tepat disertai alasan yang dapat dipertanggungjawabkan`
+  ][(i+hash(cls+subject))%5];
+  let opts=[correct,...DIST.map(x=>`${x} dalam pembahasan ${t}`)];
+  let shift=(i*7+hash(subject+cls))%5;opts=opts.slice(shift).concat(opts.slice(0,shift));
+  let answer=opts.indexOf(correct);
+  qs.push({q:`${cls} · ${tmpl(t)} (butir ${i+1})`,options:opts,answer,explanation:`Jawaban tepat menekankan pemahaman ${t}, penggunaan alasan yang relevan, dan penerapan konsep sesuai konteks.`});
+ }
+ BANK[key]=qs;return qs;
+}
+let student={},category="",subject="",mode="REGULER",questions=[],answers={},idx=0,timeLeft=5400,timerInt=null,violation=false,questScore=0;
+const $=id=>document.getElementById(id);
+function show(id){["home","portal","subjects","adventure","exam","result","teacher"].forEach(x=>$(x).classList.toggle("hidden",x!==id))}
+function enterPortal(){let name=$("studentName").value.trim(),no=$("examNo").value.trim(),cl=$("classSelect").value;if(!name||!no||!cl){alert("Lengkapi nama, nomor ujian, dan kelas.");return}student={name,no,cl};$("welcome").textContent="SELAMAT DATANG, "+name.toUpperCase();$("studentMeta").textContent=`Nomor ujian: ${no} · Kelas ${cl} · Semester Ganjil`;renderCategories();show("portal")}
+function renderCategories(){$("categories").innerHTML=Object.entries(GROUPS).map(([g,s])=>`<button class="tile" onclick="selectGroup('${g}')"><span class="glyph">${({AGAMA:"☼",UMUM:"▤",IPA:"⚛",IPS:"◎"})[g]}</span><b>ASESMEN ${g}</b><span>${s.length} mata pelajaran</span></button>`).join("")}
+function selectGroup(g){category=g;showSubjects("regular")}
+function showSubjects(){if(!category){alert("Pilih rumpun asesmen terlebih dahulu.");return}$("subjectTitle").textContent="Asesmen "+category;$("subjectDesc").textContent=`Kelas ${student.cl} · Semester Ganjil · 50 soal pilihan ganda`; $("subjectGrid").innerHTML=GROUPS[category].map(s=>`<div class="subject-card"><h3>${s}</h3><p>50 soal · A, B, C, D, E · Kelas ${student.cl}</p><button class="primary" onclick="startExam('${s}','REGULER')">MULAI UJIAN</button></div>`).join("");show("subjects")}
+function backPortal(){clearInterval(timerInt);show("portal")}
+function showAdventure(){show("adventure");$("questArea").innerHTML=""}
+function startAdventure(m){mode=m;let pool=GROUPS[category]||Object.values(GROUPS).flat();subject=pool[0];questions=buildBank(subject,student.cl).slice(0,10);answers={};idx=0;questScore=0;$("questArea").innerHTML=`<p class="pill">${m} · 10 GERBANG</p><div id="avatar" style="font-size:42px;margin:15px 0">🧙‍♂️ ➜ 🏰</div><p class="muted">Karakter bergerak satu tahap setiap jawaban benar. Jawab pertanyaan berikut untuk melanjutkan misi.</p><div id="questQuestion"></div>`;renderQuest()}
+function renderQuest(){let q=questions[idx];if(!q){$("questQuestion").innerHTML=`<h2>Misi selesai!</h2><p>Skor petualangan: ${questScore}/10</p>`;return}
+ $("questQuestion").innerHTML=`<h3>Gerbang ${idx+1}/10</h3><p>${q.q}</p>${q.options.map((o,i)=>`<button class="option" onclick="questAnswer(${i})">${"ABCDE"[i]}. ${o}</button>`).join("")}`}
+function questAnswer(n){if(n===questions[idx].answer){questScore++;$("avatar").textContent="🧙‍♂️　➜　🏰　✨"}else $("avatar").textContent="🧙‍♂️　💥";idx++;renderQuest()}
+function startExam(s,m){subject=s;mode=m;questions=buildBank(s,student.cl).map(x=>({...x}));for(let i=questions.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[questions[i],questions[j]]=[questions[j],questions[i]]}answers={};idx=0;timeLeft=5400;$("examMode").textContent=m;$("examSubject").textContent=s;$("examStudent").textContent=`${student.name} · ${student.no} · Kelas ${student.cl}`;show("exam");renderQuestion();clearInterval(timerInt);timerInt=setInterval(tick,1000)}
+function renderQuestion(){let q=questions[idx];$("questionCount").textContent=`Soal ${idx+1} dari ${questions.length}`;$("answeredCount").textContent=`Terjawab ${Object.keys(answers).length}`;$("progressBar").style.width=((idx+1)/questions.length*100)+"%";$("questionText").textContent=q.q;$("options").innerHTML=q.options.map((o,i)=>`<button class="option ${answers[idx]===i?"selected":""}" ${answers[idx]!==undefined?"disabled":""} onclick="chooseAnswer(${i})">${"ABCDE"[i]}. ${o}</button>`).join("");$("nextBtn").textContent=idx===questions.length-1?"SELESAI →":"SOAL BERIKUTNYA →"}
+function chooseAnswer(n){if(answers[idx]!==undefined)return;answers[idx]=n;renderQuestion()}
+function nextQuestion(){if(answers[idx]===undefined){alert("Pilih satu jawaban sebelum melanjutkan.");return}if(idx<questions.length-1){idx++;renderQuestion()}else finishExam()}
+function tick(){timeLeft--;let m=Math.floor(timeLeft/60),s=timeLeft%60;$("timer").textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");if(timeLeft<=0)finishExam()}
+function finishExam(){clearInterval(timerInt);let correct=questions.reduce((a,q,i)=>a+(answers[i]===q.answer?1:0),0),score=Math.round(correct/questions.length*100);let rec={...student,subject,score,correct,total:questions.length,date:new Date().toLocaleString("id-ID")};let arr=JSON.parse(localStorage.getItem("qa_results")||"[]");arr.push(rec);localStorage.setItem("qa_results",JSON.stringify(arr));$("resultContent").innerHTML=`<h2>${student.name}</h2><p class="muted">${subject} · Kelas ${student.cl} · ${rec.date}</p><div style="font-size:58px;font-weight:900;color:var(--cyan)">${score}</div><p>Jawaban benar: ${correct} dari ${questions.length}</p><p>${score>=75?"Tuntas":"Perlu penguatan materi"}</p><button onclick="window.print()">CETAK HASIL / PDF</button>`;show("result")}
+function blackout(msg){if(mode!=="REGULER"||$("exam").classList.contains("hidden"))return;violation=true;$("blackMessage").textContent=msg;$("blackout").classList.add("show")}
+function resumeAfterViolation(){$("blackout").classList.remove("show");if(violation){violation=false;let old=questions[idx];questions[idx]=buildBank(subject,student.cl)[Math.floor(Math.random()*50)];if(questions[idx].q===old.q)questions[idx]=buildBank(subject,student.cl)[(Math.floor(Math.random()*49)+1)%50];renderQuestion()}}
+document.addEventListener("visibilitychange",()=>{if(document.hidden)blackout("Perpindahan tab atau aplikasi terdeteksi.")});
+window.addEventListener("blur",()=>blackout("Jendela ujian kehilangan fokus."));
+document.addEventListener("copy",e=>{if(!$("exam").classList.contains("hidden")){e.preventDefault();blackout("Aktivitas penyalinan terdeteksi.")}});
+document.addEventListener("contextmenu",e=>{if(!$("exam").classList.contains("hidden")){e.preventDefault();blackout("Menu konteks dinonaktifkan selama ujian.")}});
+function teacherLogin(){let id=prompt("Masukkan ID Guru");if(id==="AGUNG562599"){show("teacher");renderResults()}else if(id!==null)alert("ID guru tidak valid.")}
+function renderResults(){let cl=$("filterClass").value,arr=JSON.parse(localStorage.getItem("qa_results")||"[]").filter(x=>!cl||x.cl===cl);$("resultRows").innerHTML=arr.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.no)}</td><td>${x.cl}</td><td>${esc(x.subject)}</td><td>${x.score}</td><td>${x.date}</td></tr>`).join("")||'<tr><td colspan="6">Belum ada hasil tersimpan pada perangkat ini.</td></tr>'}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function importQuestions(){let f=$("questionFile").files[0];if(!f){$("importStatus").textContent="Pilih file JSON terlebih dahulu.";return}let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(!d.subject||!d.class||!Array.isArray(d.questions)||d.questions.length<1)throw Error("Struktur tidak sesuai");d.questions.forEach(q=>{if(!q.q||!Array.isArray(q.options)||q.options.length!==5||!Number.isInteger(q.answer)||q.answer<0||q.answer>4)throw Error("Setiap soal harus memiliki 5 opsi dan answer 0-4")});localStorage.setItem("qa_bank_"+d.subject+"_"+d.class,JSON.stringify(d.questions));BANK[d.subject+"|"+d.class]=d.questions;$("importStatus").textContent=`Berhasil mengimpor ${d.questions.length} soal ${d.subject} kelas ${d.class}.`}catch(e){$("importStatus").textContent="Gagal: "+e.message}};r.readAsText(f)}
+function exportCSV(){let arr=JSON.parse(localStorage.getItem("qa_results")||"[]");let csv="Nama,Nomor Ujian,Kelas,Mapel,Skor,Benar,Tanggal\n"+arr.map(x=>[x.name,x.no,x.cl,x.subject,x.score,x.correct,x.date].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\n");let a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv"}));a.download="hasil-asesmen.csv";a.click()}
+</script></body></html>
